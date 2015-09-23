@@ -36,7 +36,8 @@ fi
 
 
 #Extracting Ngspice to Home Directory
-tar -xzvf $ngspice.tar.gz -C $HOME
+#tar -xzvf $ngspice.tar.gz -C $HOME
+mv -r module/ngspice $HOME/$ngspice 
 
 if [ "$?" == 0 ];then 
     echo "Ngspice extracted sucessfuly to $HOME "
